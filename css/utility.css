@@ -1,0 +1,151 @@
+
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: var(--font-body), sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Variables */
+:root {
+    /* Colors */
+    --color-primary: #d8927b;
+    --color-secondary: #f5f5f5;
+    --color-dark: #333;
+    --color-light: #fff;
+
+    /* Fonts */
+    --font-title: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
+
+    /* Spacing */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    --spacing-xlarge: 40px;
+}
+
+/* General Styles */
+body {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+    font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-title);
+    color: var(--color-dark);
+}
+
+button {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border: none;
+    padding: var(--spacing-small) var(--spacing-medium);
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: var(--font-body);
+}
+
+button:hover {
+    background-color: darken(var(--color-primary), 10%);
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-large) 0;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-medium);
+    text-align: center;
+    color: var(--color-primary);
+}
+
+/* Cards */
+.card {
+    background-color: var(--color-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: var(--spacing-medium);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-small);
+    font-family: var(--font-title);
+    color: var(--color-dark);
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-dark);
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    text-align: center;
+    padding: var(--spacing-large) 0;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: var(--color-primary);
+    margin: 0 var(--spacing-small);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

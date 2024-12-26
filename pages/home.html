@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HA Website </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/utility.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/logo.svg" alt="" srcset="">
+                    </a>
+                    <button class="navbar-toggler" onclick="toggleMenu()" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <button id="close-btn" onclick="toggleMenu()">
+                            <i class="fa-solid fa-close"></i>
+                        </button>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Videos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <ul class="right-ul navbar-nav d-flex align-items-center me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="btn">let's talk</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="hero d-flex justify-content-center align-items-center">
+                <div class="hero-content row">
+                    <div class="hero-text col-lg-6 col-md-5 col-sm-12">
+                        <span>Welcome</span>
+                        <h1>I’m Dianna Adams</h1>
+                        <h2>Food Critic / Influencer / Blogger</h2>
+                        <p>
+                            Massa urna magnis dignissim id euismod porttitor vitae etiam viverra nunc at adipiscing sit
+                            morbi aliquet mauris porttitor nisi, senectus pharetra, ac porttitor orci
+                        </p>
+                        <button class="btn">Join Insider</button>
+                    </div>
+                    <div class="hero-img col-lg-6 col-md-7 col-sm-12">
+                        <img src="../images/hero-img.jpg" alt="">
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 hero-numbers">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="box">
+                                    <i class="fa-brands fa-youtube"></i>
+                                    <h3>1.2M +</h3>
+                                    <p>Subscribers</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="box">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <h3>1.8M +</h3>
+                                    <p>followers</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="box">
+                                    <i class="fa-solid fa-wifi"></i>
+                                    <h3>800K +</h3>
+                                    <p>Readers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </header>
+    <section class="sponsers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <img src="../images/sponsor-1.svg" alt="" srcset="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <img src="../images/sponsor-2.svg" alt="" srcset="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <img src="../images/sponsor-3.svg" alt="" srcset="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <img src="../images/sponsor-4.svg" alt="" srcset="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <img src="../images/sponsor-5.svg" alt="" srcset="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <img src="../images/sponsor-1.svg" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="row reviews-content ">
+                <div class="reviews-content-header  col-12 d-flex justify-content-between align-items-center">
+                    <h2>Last Reviews</h2>
+                    <button class="btn ">
+                        View All
+                    </button>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../images/food-blogger-best-restaurant-2.jpg" alt="">
+                        <div class="card-content">
+                            <h3>Grilled Flank Steak with Chimichurri</h3>
+                            <p>Potenti tincidunt arcu euismod curabitur iaculis ut aliquet facilisis pharetra, pharetra
+                                dolor scelerisque.</p>
+                            <button class="btn">
+                                READ MORE<i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../images/food-blogger-best-restaurant-3.jpg" alt="">
+                        <div class="card-content">
+                            <h3>Grilled Flank Steak with Chimichurri</h3>
+                            <p>Potenti tincidunt arcu euismod curabitur iaculis ut aliquet facilisis pharetra, pharetra
+                                dolor scelerisque.</p>
+                            <button class="btn">
+                                READ MORE<i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../images/food-blogger-best-restaurant-1.jpg" alt="">
+                        <div class="card-content">
+                            <h3>Grilled Flank Steak with Chimichurri</h3>
+                            <p>Potenti tincidunt arcu euismod curabitur iaculis ut aliquet facilisis pharetra, pharetra
+                                dolor scelerisque.</p>
+                            <button class="btn">
+                                READ MORE<i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blogs">
+        <div class="container">
+            <h2 class="text-center section-header">Best in Class Restaurant</h2>
+            <p class="text-center m-auto w-75 section-description">Massa urna magnis dignissim id euismod porttitor
+                vitae etiam viverra nunc
+                at adipiscing sit morbi aliquet mauris porttitor nisi, senectus pharetra ac porttitor orci.</p>
+            <div class="row gape-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../images/food-blogger-best-restaurant-1.jpg" alt="food-blogger-best-restaurant-1">
+                        <div class="card-content">
+                            <h3>Grilled Flank Steak with Chimichurri</h3>
+                            <p>
+                                Potenti tincidunt arcu euismod curabitur iaculis ut aliquet facilisis pharetra, pharetra
+                                dolor scelerisque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../images/food-blogger-best-restaurant-2.jpg" alt="food-blogger-best-restaurant-1">
+                        <div class="card-content">
+                            <h3>Grilled Flank Steak with Chimichurri</h3>
+                            <p>
+                                Potenti tincidunt arcu euismod curabitur iaculis ut aliquet facilisis pharetra, pharetra
+                                dolor scelerisque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../images/food-blogger-best-restaurant-3.jpg" alt="food-blogger-best-restaurant-1">
+                        <div class="card-content">
+                            <h3>Grilled Flank Steak with Chimichurri</h3>
+                            <p>
+                                Potenti tincidunt arcu euismod curabitur iaculis ut aliquet facilisis pharetra, pharetra
+                                dolor scelerisque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../images/food-blogger-best-restaurant-4.jpg" alt="food-blogger-best-restaurant-1">
+                        <div class="card-content">
+                            <h3>Grilled Flank Steak with Chimichurri</h3>
+                            <p>
+                                Potenti tincidunt arcu euismod curabitur iaculis ut aliquet facilisis pharetra, pharetra
+                                dolor scelerisque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../images/food-blogger-best-restaurant-5.jpg" alt="food-blogger-best-restaurant-1">
+                        <div class="card-content">
+                            <h3>Grilled Flank Steak with Chimichurri</h3>
+                            <p>
+                                Potenti tincidunt arcu euismod curabitur iaculis ut aliquet facilisis pharetra, pharetra
+                                dolor scelerisque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../images/food-blogger-best-restaurant-6.jpg" alt="food-blogger-best-restaurant-1">
+                        <div class="card-content">
+                            <h3>Grilled Flank Steak with Chimichurri</h3>
+                            <p>
+                                Potenti tincidunt arcu euismod curabitur iaculis ut aliquet facilisis pharetra, pharetra
+                                dolor scelerisque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="join-us d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row  join-us_content ">
+                <div class="join-us_content-img col-lg-6 col-md-6 col-sm-12">
+                    <img src="../images/subscripe.jpg" alt="subscripe">
+                </div>
+                <div class="join-us_content-text col-lg-6 col-md-6 col-sm-12">
+                    <h2>Join Mailing List
+                    </h2>
+                    <p>Sign up and get all the latest, ad-free reviews, recipes and news sent to your inbox.
+                    </p>
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter email address">
+                        <button class="btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="videos">
+        <div class="container">
+            <div class="row">
+                <div class="reviews-content-header  col-12 d-flex justify-content-between align-items-center">
+                    <h2>Last Vidoes </h2>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="video-container">
+                        <img src="../images/food-blogger-latest-review-img-1.jpg" alt="video">
+                        <div class="video-container-content">
+                            <h2>
+                                Dianna Adams visits the Sooto Restaurant | Uncovered Miami
+                            </h2>
+                            <p>
+                                A consectetur eget ultrices nec velit purus quam dignissim purus gravida aliquam mattis
+                                ultrices eget ultricies tincidunt et erat enim vitae sollicitudin tellus placerat
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="video-blogs">
+                        <div class="card ">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="../images/food-blogger-best-restaurant-1.jpg"
+                                        class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h5>his is a wider card with natural lead-in to additional content</h5>
+                                        <p>This is a wider card with supporting text below as a natural lead-in to
+                                            additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="../images/food-blogger-latest-review-img-2.jpg"
+                                        class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h5>his is a wider card with natural lead-in to additional content</h5>
+                                        <p>This is a wider card with supporting text below as a natural lead-in to
+                                            additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="../images/food-blogger-latest-video-3.jpg" class="img-fluid rounded-start"
+                                        alt="...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h5>his is a wider card with natural lead-in to additional content</h5>
+                                        <p>This is a wider card with supporting text below as a natural lead-in to
+                                            additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="../images/food-blogger-latest-review-img-3.jpg"
+                                        class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h5>his is a wider card with natural lead-in to additional content</h5>
+                                        <p>This is a wider card with supporting text below as a natural lead-in to
+                                            additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn"> View All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-8 col-sm-12">
+                    <h2>
+                        Invite me to your restaurant Get exposure of millions food lovers.
+                    </h2>
+                    <p>Lorem dui tincidunt nunc viverra morbi et maecenas quam adipiscing integer amet eget blandit
+                        phasellus est natoque blandit facilisi eleifend.</p>
+                    <button class="btn">Let's Talk </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content d-flex justify-content-between align-items-center">
+                        <div class="footer-content-left">
+                            <img src="../images/logo.svg" alt="logo">
+                            <ul>
+                                <li> <a href="#">Home</a></li>
+                                <li> <a href="#">About</a></li>
+                                <li> <a href="#">Review</a></li>
+                                <li> <a href="#">Video</a></li>
+                                <li> <a href="#">Contact</a></li>
+                            </ul>
+
+                            <ul class="social-media">
+                                <li>
+                                    <i class="fa-brands fa-facebook"></i>
+                                </li>
+
+                                <li>
+                                    <i class="fa-brands fa-instagram"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-youtube"></i>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 text-center p-5"  >
+                        <p>Copyright 2024 All rights reserved | This template is made with <i
+                                class="fa-solid fa-heart"></i> by <span>Hassan Ali </span></p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
